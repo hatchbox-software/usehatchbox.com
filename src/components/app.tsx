@@ -17,7 +17,7 @@ const App = () => {
     }, []);
 
 	return <div id="app">
-        <img class="logo" src="assets/logo_color.png" alt="logo" height="80" />
+        <img class="logo" src="assets/logo_color.png" alt="logo" height="110" />
         <div class="loading">Loading{loadingPeriods}</div>
     </div>
 };
