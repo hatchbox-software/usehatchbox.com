@@ -53,7 +53,7 @@ const App = () => {
                         <div class="feature">
                             <div>
                                 <div class="feature-icon">
-                                    <img src="assets/globe.svg" />
+                                    <img src="assets/edit.svg" />
                                 </div>
                             </div>
                             <div>
@@ -67,7 +67,7 @@ const App = () => {
                         <div class="feature">
                             <div>
                                 <div class="feature-icon">
-                                    <img src="assets/edit.svg" />
+                                    <img src="assets/globe.svg" />
                                 </div>
                             </div>
                             <div>
