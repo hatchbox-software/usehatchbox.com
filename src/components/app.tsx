@@ -19,15 +19,23 @@ const App = () => {
                             </div>
                         </div>
                         <div class="buttons">
-                            <div class="button">PRICING</div>
-                            <div class="button secondary">LEARN MORE</div>
+                            <div class="button" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
+                                PRICING
+                            </div>
+                            <div
+                                class="button secondary"
+                                onClick={() => document.getElementById('learn-more')?.scrollIntoView({ behavior: 'smooth' })}>
+                                LEARN MORE
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="section light">
                 <div class="content center">
-                    <div class="section-header">Bring your website to life!</div>
+                    <div id="learn-more" class="section-header">
+                        Bring your website to life!
+                    </div>
                     <div class="site-to-life-description">
                         Are you an owner looking to take your small business to the next level? Look no further than Hatchbox. A website can be an
                         important tool for small businesses to reach and engage with customers, establish an online presence, and stand out in a
@@ -114,7 +122,9 @@ const App = () => {
             </div>
             <div class="section light">
                 <div class="content center">
-                    <div class="section-header">Pricing</div>
+                    <div id="pricing" class="section-header">
+                        Pricing
+                    </div>
                     <div class="pricing-header">
                         <div class="pricing-item">
                             <div class="pricing-value">$125</div>
