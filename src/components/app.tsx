@@ -1,53 +1,143 @@
 import { h } from 'preact';
 import '../style/index.css';
-import {useState, useEffect} from "preact/hooks";
-import { motion } from 'framer-motion';
+import '../style/header.scss';
+import '../style/bring-site-to-life.scss';
+import '../style/features.scss';
+import '../style/pricing.scss';
 
 const App = () => {
-    const [loadingPeriods, setLoadingPeriods] = useState('...');
-
-    useEffect(() => {
-        setInterval(() => {
-            setLoadingPeriods(prevLoadingPeriods => {
-                if (prevLoadingPeriods.length === 3) {
-                    return '.';
-                } else
-                    return prevLoadingPeriods + '.';
-            })
-        }, 800)
-    }, []);
-
-    const container = {
-        hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.3
-            }
-        }
-    }
-
-    const item = {
-        hidden: {
-            y: -70,
-            opacity: 0
-        },
-        show: { opacity: 1, y: 0 }
-    }
-
-	return <div id="app">
-        <motion.div
-            style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center'}}
-            variants={container}
-            initial="hidden"
-            animate="show"
-        >
-            <motion.img className="logo" src="assets/logo_color.png" alt="logo" height="110" variants={item} />
-            <motion.div class="loading" variants={item}>
-                Loading{loadingPeriods}
-            </motion.div>
-        </motion.div>
-    </div>
+    return (
+        <div id="app">
+            <div class="section center">
+                <div class="content">
+                    <div>
+                        <div class="header">
+                            <div class="meet">Meet</div>
+                            <div class="hatchbox">Hatchbox!</div>
+                            <div class="description">
+                                Transform your small business with custom website development and lifelong support from Hatchbox
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="button">PRICING</div>
+                            <div class="button secondary">LEARN MORE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section light">
+                <div class="content center">
+                    <div class="section-header">Bring your website to life!</div>
+                    <div class="site-to-life-description">
+                        Are you an owner looking to take your small business to the next level? Look no further than Hatchbox. A website can be an
+                        important tool for small businesses to reach and engage with customers, establish an online presence, and stand out in a
+                        competitive market.
+                    </div>
+                    <div class="site-to-life-description">
+                        Our team is dedicated to developing custom websites for small businesses like yours, tailored to your unique needs and goals.
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="content center">
+                    <div class="section-header">With Hatchbox, you'll get:</div>
+                    <div class="features">
+                        <div class="feature">
+                            <div>
+                                <div class="feature-icon">
+                                    <img src="assets/globe.svg" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="feature-title">Custom site development</div>
+                                <div class="feature-description">
+                                    Our team will work with you directly to understand your business and create a website that reflects your unique
+                                    brand and personality.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div>
+                                <div class="feature-icon">
+                                    <img src="assets/edit.svg" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="feature-title">Domain name registration and management</div>
+                                <div class="feature-description">
+                                    We'll help you choose and register a domain name that represents your business, and manage it for you ongoing.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div>
+                                <div class="feature-icon">
+                                    <img src="assets/flash.svg" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="feature-title">Optimal website performance</div>
+                                <div class="feature-description">
+                                    We use advanced coding techniques to ensure that your website loads quickly and performs well.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div>
+                                <div class="feature-icon">
+                                    <img src="assets/heart.svg" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="feature-title">Lifetime support</div>
+                                <div class="feature-description">
+                                    We're here for you every step of the way, offering ongoing support to keep your website running smoothly. This
+                                    includes the ability to work with a person directly to make updates to your website.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div>
+                                <div class="feature-icon">
+                                    <img src="assets/bar.svg" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="feature-title">Quarterly site analytic reviews</div>
+                                <div class="feature-description">
+                                    We'll provide regular analytic reviews of your website's to help you track your website’s performance.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section light">
+                <div class="content center">
+                    <div class="section-header">Pricing</div>
+                    <div class="pricing-header">
+                        <div class="pricing-item">
+                            <div class="pricing-value">$125</div>
+                            <div class="pricing-type">Initiation</div>
+                        </div>
+                        <div class="pricing-item">
+                            <div class="pricing-value">$50</div>
+                            <div class="pricing-type">Per Month</div>
+                        </div>
+                    </div>
+                    <div class="pricing-description">
+                        Our main priority is to help businesses succeed with the skills and expertise we have gained over the years. And the best
+                        part? Our pricing is designed to be cost-effective. Sign up today for a low cost initiation fee of $125 and a low monthly fee
+                        of just $50. Lifetime support and quarterly site analytics reviews are included in all plans. Cancel at any time.
+                    </div>
+                    <div class="pricing-description">
+                        Don't let a lack of technical expertise or time hold you back. Let Hatchbox help you transform your small business and reach
+                        new heights.
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 };
 
 export default App;

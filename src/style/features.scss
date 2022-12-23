@@ -1,0 +1,55 @@
+.features {
+  margin: 10px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px;
+  color: #EEEEEE;
+  background-color: #272727;
+  border-radius: 24px;
+  margin: 14px;
+  width: 600px;
+
+  img {
+    height: 74px;
+    margin-right: 14px;
+  }
+
+  .feature-icon {
+    color: #FFE985;
+  }
+
+  .feature-title {
+    color: #FFE985;
+    font-weight: bold;
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+  }
+
+  .feature-description {
+    font-family: Inter, sans-serif;
+  }
+
+  @media (max-width: 700px) {
+    padding: 18px;
+    border-radius: 18px;
+    margin: 14px;
+    width: 450px;
+
+    img {
+      height: 54px;
+      margin-right: 10px;
+    }
+
+    .feature-title {
+      font-size: 18px;
+    }
+
+    .feature-description {
+      font-size: 14px;
+    }
+  }
+}
