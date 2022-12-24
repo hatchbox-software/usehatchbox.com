@@ -5,6 +5,7 @@ import '../style/header.scss';
 import '../style/bring-site-to-life.scss';
 import '../style/features.scss';
 import '../style/pricing.scss';
+import '../style/contact.scss';
 import { useRef } from 'react';
 import CountUp from 'react-countup';
 
@@ -17,6 +18,9 @@ const App = () => {
 
     const section3Ref = useRef(null);
     const section3IsInView = useInView(section3Ref, { once: true });
+
+    const section4Ref = useRef(null);
+    const section4IsInView = useInView(section4Ref, { once: true });
 
     return (
         <div id="app">
@@ -54,9 +58,7 @@ const App = () => {
                         opacity: section1IsInView ? 1 : 0,
                         transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
                     }}>
-                    <div id="learn-more" class="section-header">
-                        Bring your website to life!
-                    </div>
+                    <div class="section-header">Bring your website to life!</div>
                     <div class="site-to-life-description">
                         Are you ready to take your small business to the next level? Look no further than Hatchbox. A website is an essential tool for
                         reaching and engaging with customers, establishing an online presence, and standing out in a crowded market.
@@ -67,7 +69,7 @@ const App = () => {
                     </div>
                 </div>
             </div>
-            <div class="section">
+            <div class="section" id="learn-more">
                 <div
                     class="content center"
                     ref={section2Ref}
@@ -148,7 +150,7 @@ const App = () => {
                     </div>
                 </div>
             </div>
-            <div class="section light">
+            <div class="section light" id="pricing">
                 <div
                     class="content center"
                     ref={section3Ref}
@@ -157,9 +159,7 @@ const App = () => {
                         opacity: section3IsInView ? 1 : 0,
                         transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
                     }}>
-                    <div id="pricing" class="section-header">
-                        Pricing
-                    </div>
+                    <div class="section-header">Pricing</div>
                     <div class="pricing-header">
                         <div class="pricing-item">
                             <div class="pricing-value">
@@ -181,6 +181,27 @@ const App = () => {
                     </div>
                     <div class="pricing-description">
                         Don't let a lack of technical expertise or time hold you back. Let Hatchbox help your business reach its full potential.
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div
+                    class="content center"
+                    ref={section4Ref}
+                    style={{
+                        transform: section4IsInView ? 'none' : 'translateY(50px)',
+                        opacity: section4IsInView ? 1 : 0,
+                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
+                    }}>
+                    <div class="section-header">Contact Us</div>
+                    <div class="contact-us-description">
+                        Thank you for your interest in Hatchbox! If you have any questions or would like to learn more about our services, don't
+                        hesitate to contact us. To get in touch with us, please email us at:
+                    </div>
+                    <div class="email">usehatchbox@gmail.com</div>
+                    <div class="contact-us-description">
+                        We will do our best to respond to your message as soon as possible. We look forward to working with you and helping your small
+                        business thrive online!
                     </div>
                 </div>
             </div>
