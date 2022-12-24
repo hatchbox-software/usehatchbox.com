@@ -8,8 +8,14 @@ import '../style/pricing.scss';
 import { useRef } from 'react';
 
 const App = () => {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
+    const section1Ref = useRef(null);
+    const section1IsInView = useInView(section1Ref, { once: true });
+
+    const section2Ref = useRef(null);
+    const section2IsInView = useInView(section2Ref, { once: true });
+
+    const section3Ref = useRef(null);
+    const section3IsInView = useInView(section3Ref, { once: true });
 
     return (
         <div id="app">
@@ -39,11 +45,11 @@ const App = () => {
             <div class="section light">
                 <div
                     class="content center"
-                    ref={ref}
+                    ref={section1Ref}
                     style={{
-                        transform: isInView ? 'none' : 'translateX(-200px)',
-                        opacity: isInView ? 1 : 0,
-                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+                        transform: section1IsInView ? 'none' : 'translateY(50px)',
+                        opacity: section1IsInView ? 1 : 0,
+                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
                     }}>
                     <div id="learn-more" class="section-header">
                         Bring your website to life!
@@ -59,7 +65,14 @@ const App = () => {
                 </div>
             </div>
             <div class="section">
-                <div class="content center">
+                <div
+                    class="content center"
+                    ref={section2Ref}
+                    style={{
+                        transform: section2IsInView ? 'none' : 'translateY(50px)',
+                        opacity: section2IsInView ? 1 : 0,
+                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
+                    }}>
                     <div class="section-header">With Hatchbox, you'll get:</div>
                     <div class="features">
                         <div class="feature">
@@ -133,7 +146,14 @@ const App = () => {
                 </div>
             </div>
             <div class="section light">
-                <div class="content center">
+                <div
+                    class="content center"
+                    ref={section3Ref}
+                    style={{
+                        transform: section3IsInView ? 'none' : 'translateY(50px)',
+                        opacity: section3IsInView ? 1 : 0,
+                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
+                    }}>
                     <div id="pricing" class="section-header">
                         Pricing
                     </div>
