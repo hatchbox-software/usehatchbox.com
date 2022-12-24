@@ -138,7 +138,7 @@ const App = () => {
                                 </div>
                             </div>
                             <div>
-                                <div class="feature-title">Quarterly site analytic reviews</div>
+                                <div class="feature-title">Quarterly site analytics summaries</div>
                                 <div class="feature-description">
                                     We'll provide regular analytic reviews to help you track your website’s performance.
                                 </div>
