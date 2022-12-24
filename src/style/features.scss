@@ -28,6 +28,11 @@
     font-weight: bold;
     font-family: Raleway, sans-serif;
     font-size: 22px;
+    margin-bottom: 4px;
+
+    @media (max-width: 700px) {
+      margin-bottom: 2px;
+    }
   }
 
   .feature-description {

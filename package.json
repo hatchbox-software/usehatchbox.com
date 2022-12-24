@@ -26,7 +26,8 @@
     "preact": "^10.10.0",
     "preact-render-to-string": "^5.2.1",
     "preact-router": "^3.2.1",
-    "prettier": "^2.8.1"
+    "prettier": "^2.8.1",
+    "react-countup": "^6.4.0"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.12",

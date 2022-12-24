@@ -6,6 +6,7 @@ import '../style/bring-site-to-life.scss';
 import '../style/features.scss';
 import '../style/pricing.scss';
 import { useRef } from 'react';
+import CountUp from 'react-countup';
 
 const App = () => {
     const section1Ref = useRef(null);
@@ -57,12 +58,12 @@ const App = () => {
                         Bring your website to life!
                     </div>
                     <div class="site-to-life-description">
-                        Are you an owner looking to take your small business to the next level? Look no further than Hatchbox. A website can be an
-                        important tool for small businesses to reach and engage with customers, establish an online presence, and stand out in a
-                        competitive market.
+                        Are you ready to take your small business to the next level? Look no further than Hatchbox. A website is an essential tool for
+                        reaching and engaging with customers, establishing an online presence, and standing out in a crowded market.
                     </div>
                     <div class="site-to-life-description">
                         Our team is dedicated to developing custom websites for small businesses like yours, tailored to your unique needs and goals.
+                        Let us help bring your website to life and boost your business to new heights.
                     </div>
                 </div>
             </div>
@@ -138,9 +139,9 @@ const App = () => {
                                 </div>
                             </div>
                             <div>
-                                <div class="feature-title">Quarterly site analytics summaries</div>
+                                <div class="feature-title">Quarterly site analytics</div>
                                 <div class="feature-description">
-                                    We'll provide regular analytic reviews to help you track your website’s performance.
+                                    We'll provide regular analytics summaries to help you track your website’s performance.
                                 </div>
                             </div>
                         </div>
@@ -161,22 +162,25 @@ const App = () => {
                     </div>
                     <div class="pricing-header">
                         <div class="pricing-item">
-                            <div class="pricing-value">$125</div>
+                            <div class="pricing-value">
+                                $<CountUp end={section3IsInView ? 125 : 0} duration={1} />
+                            </div>
                             <div class="pricing-type">Initiation</div>
                         </div>
                         <div class="pricing-item">
-                            <div class="pricing-value">$50</div>
+                            <div class="pricing-value">
+                                $<CountUp end={section3IsInView ? 50 : 0} duration={1} />
+                            </div>
                             <div class="pricing-type">Per Month</div>
                         </div>
                     </div>
                     <div class="pricing-description">
                         Our main priority is to help businesses succeed with the skills and expertise we have gained over the years. And the best
                         part? Our pricing is designed to be cost-effective. Sign up today for a low cost initiation fee of $125 and a low monthly fee
-                        of just $50. Lifetime support and quarterly site analytics reviews are included in all plans. Cancel at any time.
+                        of just $50. Lifetime support and quarterly site analytics reviews are included in all plans, and you can cancel at any time.
                     </div>
                     <div class="pricing-description">
-                        Don't let a lack of technical expertise or time hold you back. Let Hatchbox help you transform your small business and reach
-                        new heights.
+                        Don't let a lack of technical expertise or time hold you back. Let Hatchbox help your business reach its full potential.
                     </div>
                 </div>
             </div>
