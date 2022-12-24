@@ -1,12 +1,16 @@
 import { h } from 'preact';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import '../style/index.css';
 import '../style/header.scss';
 import '../style/bring-site-to-life.scss';
 import '../style/features.scss';
 import '../style/pricing.scss';
+import { useRef } from 'react';
 
 const App = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
         <div id="app">
             <div class="section center">
@@ -33,7 +37,14 @@ const App = () => {
                 </div>
             </div>
             <div class="section light">
-                <div class="content center">
+                <div
+                    class="content center"
+                    ref={ref}
+                    style={{
+                        transform: isInView ? 'none' : 'translateX(-200px)',
+                        opacity: isInView ? 1 : 0,
+                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+                    }}>
                     <div id="learn-more" class="section-header">
                         Bring your website to life!
                     </div>
