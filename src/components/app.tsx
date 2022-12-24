@@ -23,8 +23,10 @@ const App = () => {
                 <div class="content">
                     <div>
                         <motion.div class="header" initial={{ opacity: 0, y: '-10px' }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-                            <div class="meet">Meet</div>
-                            <div class="hatchbox">Hatchbox!</div>
+                            <div class="gradient">
+                                <div class="meet">Meet</div>
+                                <div class="hatchbox">Hatchbox!</div>
+                            </div>
                             <div class="description">
                                 Transform your small business with custom website development and lifelong support from Hatchbox
                             </div>

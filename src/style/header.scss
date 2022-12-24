@@ -44,8 +44,14 @@
     display: flex;
     flex-direction: column;
 
+    .gradient {
+        font-size: 72px;
+        background: -webkit-linear-gradient(#7d65be, #6b3be8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     .meet, .hatchbox  {
-        color: #7944FF;
         font-weight: bold;
         font-family: Raleway, sans-serif;
         font-size: 72px;
@@ -81,7 +87,6 @@
         }
     }
 }
-
 
 .buttons {
     display: flex;
