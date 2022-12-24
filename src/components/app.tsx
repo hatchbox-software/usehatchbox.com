@@ -6,6 +6,7 @@ import '../style/bring-site-to-life.scss';
 import '../style/features.scss';
 import '../style/pricing.scss';
 import '../style/contact.scss';
+import '../style/preview.scss';
 import { useRef } from 'react';
 import CountUp from 'react-countup';
 
@@ -21,6 +22,9 @@ const App = () => {
 
     const section4Ref = useRef(null);
     const section4IsInView = useInView(section4Ref, { once: true });
+
+    const section5Ref = useRef(null);
+    const section5IsInView = useInView(section5Ref, { once: true });
 
     return (
         <div id="app">
@@ -42,8 +46,8 @@ const App = () => {
                             </div>
                             <div
                                 class="button secondary"
-                                onClick={() => document.getElementById('learn-more')?.scrollIntoView({ behavior: 'smooth' })}>
-                                LEARN MORE
+                                onClick={() => document.getElementById('live-preview')?.scrollIntoView({ behavior: 'smooth' })}>
+                                LIVE PREVIEW
                             </div>
                         </motion.div>
                     </div>
@@ -69,7 +73,7 @@ const App = () => {
                     </div>
                 </div>
             </div>
-            <div class="section" id="learn-more">
+            <div class="section">
                 <div
                     class="content center"
                     ref={section2Ref}
@@ -203,6 +207,31 @@ const App = () => {
                         We will do our best to respond to your message as soon as possible. We look forward to working with you and helping your small
                         business thrive online!
                     </div>
+                </div>
+            </div>
+            <div class="section light" id="live-preview">
+                <div
+                    class="content center"
+                    ref={section5Ref}
+                    style={{
+                        transform: section5IsInView ? 'none' : 'translateY(50px)',
+                        opacity: section5IsInView ? 1 : 0,
+                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
+                    }}>
+                    <div class="section-header">Live Previews</div>
+                    <motion.div
+                        class="preview"
+                        onClick={() => window.open('https://preview-forkd.vercel.app/')}
+                        whileHover={{
+                            scale: 1.05,
+                            transition: { duration: 0.5 },
+                        }}>
+                        <img src="assets/preview.png" alt="preview" />
+                        <div class="preview-title">Fork'd Preview Site</div>
+                        <div class="preview-description">
+                            To see a live preview of a small restaurant website that showcases all of our available features, just click here!
+                        </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

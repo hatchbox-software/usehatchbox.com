@@ -1,0 +1,30 @@
+.preview {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin-top: 0.5rem;
+  background-color: #101010;
+  border-radius: 0.5rem;
+  max-width: 250px;
+
+  color: #EEEEEE;
+
+  img {
+    width: 100%;
+  }
+
+  .preview-title {
+    color: #FFE985;
+    margin: 8px 0;
+    font-weight: bold;
+    font-family: Raleway, sans-serif;
+  }
+
+  .preview-description {
+    font-family: Inter, sans-serif;
+    text-align: center;
+  }
+}
