@@ -49,7 +49,7 @@ const App = () => {
                     style={{
                         transform: section1IsInView ? 'none' : 'translateY(50px)',
                         opacity: section1IsInView ? 1 : 0,
-                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
+                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
                     }}>
                     <div id="learn-more" class="section-header">
                         Bring your website to life!
@@ -152,7 +152,7 @@ const App = () => {
                     style={{
                         transform: section3IsInView ? 'none' : 'translateY(50px)',
                         opacity: section3IsInView ? 1 : 0,
-                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
+                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
                     }}>
                     <div id="pricing" class="section-header">
                         Pricing
