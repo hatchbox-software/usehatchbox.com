@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import { motion } from 'framer-motion';
 import '../style/index.css';
 import '../style/header.scss';
 import '../style/bring-site-to-life.scss';
@@ -11,14 +12,14 @@ const App = () => {
             <div class="section center">
                 <div class="content">
                     <div>
-                        <div class="header">
+                        <motion.div class="header" initial={{ opacity: 0, y: '-10px' }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
                             <div class="meet">Meet</div>
                             <div class="hatchbox">Hatchbox!</div>
                             <div class="description">
                                 Transform your small business with custom website development and lifelong support from Hatchbox
                             </div>
-                        </div>
-                        <div class="buttons">
+                        </motion.div>
+                        <motion.div class="buttons" initial={{ y: '10px', opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
                             <div class="button" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
                                 PRICING
                             </div>
@@ -27,7 +28,7 @@ const App = () => {
                                 onClick={() => document.getElementById('learn-more')?.scrollIntoView({ behavior: 'smooth' })}>
                                 LEARN MORE
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
