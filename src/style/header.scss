@@ -1,5 +1,5 @@
 .section {
-    padding: 84px 32px;
+    padding: 84px 2rem;
     width: 100%;
 
     &.light {
@@ -36,7 +36,7 @@
     }
 
     @media (max-width: 700px) {
-        padding: 64px 32px;
+        padding: 64px 2rem;
     }
 }
 
@@ -64,7 +64,7 @@
 
     .description {
         max-width: 600px;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-family: Inter, sans-serif;
         color: #EEEEEE
     }
@@ -80,7 +80,7 @@
         }
 
         .description {
-            font-size: 14px;
+            font-size: 0.875rem;
             font-family: Inter, sans-serif;
             color: #EEEEEE;
             max-width: 375px;
@@ -91,7 +91,7 @@
 .buttons {
     display: flex;
     flex-direction: row;
-    margin-top: 32px;
+    margin-top: 2rem;
 
     .button {
         display: flex;
@@ -103,9 +103,9 @@
         height: 42px;
         padding: 0 36px;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 1rem;
         border-radius: 68px;
-        margin-right: 12px;
+        margin-right: 0.75rem;
 
         &:hover {
             background-color: #6b3be8;
@@ -122,14 +122,14 @@
     }
 
     @media (max-width: 700px) {
-        margin-top: 18px;
+        margin-top: 1.125rem;
 
         .button {
-            height: 32px;
-            padding: 0 16px;
+            height: 2rem;
+            padding: 0 1rem;
             font-size: 13px;
-            border-radius: 32px;
-            margin-right: 8px;
+            border-radius: 2rem;
+            margin-right: 0.5rem;
         }
     }
 }

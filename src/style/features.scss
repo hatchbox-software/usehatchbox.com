@@ -1,22 +1,22 @@
 .features {
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 .feature {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 24px;
+  padding: 1.5rem;
   color: #EEEEEE;
   background-color: #272727;
-  border-radius: 24px;
-  margin: 14px;
+  border-radius: 1.5rem;
+  margin: 0.875rem;
   width: 600px;
   max-width: 90vw;
 
   img {
     height: 58px;
-    margin-right: 14px;
+    margin-right: 0.875rem;
   }
 
   .feature-icon {
@@ -37,26 +37,26 @@
 
   .feature-description {
     font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   @media (max-width: 700px) {
-    padding: 18px;
-    border-radius: 18px;
-    margin: 14px;
+    padding: 1.125rem;
+    border-radius: 1.125rem;
+    margin: 0.875rem;
     width: 450px;
 
     img {
       height: 54px;
-      margin-right: 10px;
+      margin-right: 0.625rem;
     }
 
     .feature-title {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
 
     .feature-description {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
   }
 }

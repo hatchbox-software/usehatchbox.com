@@ -2,11 +2,11 @@
   color: #EEEEEE;
   font-family: Inter, sans-serif;
   text-align: center;
-  font-size: 16px;
-  margin: 12px 0;
+  font-size: 1rem;
+  margin: 0.75rem 0;
 
   @media (max-width: 700px) {
-    font-size: 14px;
-    margin: 8px 0;
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
   }
 }

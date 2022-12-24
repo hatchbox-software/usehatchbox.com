@@ -4,15 +4,15 @@
   align-items: center;
 
   .pricing-item {
-    padding: 24px;
+    padding: 1.5rem;
     background-color: #101010;
     color: #EEEEEE;
-    border-radius: 18px;
+    border-radius: 1.125rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 24px 12px;
+    margin: 1.5rem 0.75rem;
     min-width: 250px;
 
     .pricing-value {
@@ -20,19 +20,19 @@
       font-weight: bold;
       font-family: Raleway, sans-serif;
       color: #FFE985;
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
     }
 
     .pricing-type {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-family: Inter, sans-serif;
         color: #EEEEEE;
     }
 
     @media (max-width: 700px) {
-      padding: 18px;
-      border-radius: 14px;
-      margin: 24px 6px;
+      padding: 1.125rem;
+      border-radius: 0.875rem;
+      margin: 1.5rem 6px;
       min-width: 150px;
 
       .pricing-value {
@@ -41,7 +41,7 @@
       }
 
       .pricing-type {
-        font-size: 16px;
+        font-size: 1rem;
       }
     }
   }
@@ -51,11 +51,11 @@
   color: #EEEEEE;
   font-family: Inter, sans-serif;
   text-align: center;
-  font-size: 16px;
-  margin: 12px 0;
+  font-size: 1rem;
+  margin: 0.75rem 0;
 
   @media (max-width: 700px) {
-    font-size: 14px;
-    margin: 8px 0;
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
   }
 }
