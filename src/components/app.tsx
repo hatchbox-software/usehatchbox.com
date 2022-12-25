@@ -36,9 +36,7 @@ const App = () => {
                                 <div class="meet">Meet</div>
                                 <div class="hatchbox">Hatchbox!</div>
                             </div>
-                            <div class="description">
-                                Transform your small business with custom website development and lifelong support from Hatchbox
-                            </div>
+                            <div class="description">Transform your business with custom website development and lifelong support from Hatchbox</div>
                         </motion.div>
                         <motion.div class="buttons" initial={{ y: '10px', opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
                             <div class="button" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -64,12 +62,12 @@ const App = () => {
                     }}>
                     <div class="section-header">Bring your site to life!</div>
                     <div class="site-to-life-description">
-                        Are you ready to take your small business to the next level? Look no further than Hatchbox. A site is an essential tool for
-                        reaching and engaging with customers, establishing an online presence, and standing out in a crowded market.
+                        Are you ready to take your business to the next level? Look no further than Hatchbox. A site is an essential tool for reaching
+                        and engaging with customers, establishing an online presence, and standing out in a crowded market.
                     </div>
                     <div class="site-to-life-description">
-                        Our team is dedicated to developing custom sites for small businesses like yours, tailored to your unique needs and goals. Let
-                        us help bring your site to life and boost your business to new heights.
+                        Our team is dedicated to developing custom sites for businesses like yours, tailored to your unique needs and goals. Let us
+                        help bring your site to life and boost your business to new heights.
                     </div>
                 </div>
             </div>
@@ -218,7 +216,7 @@ const App = () => {
                     </div>
                     <div class="email">usehatchbox@gmail.com</div>
                     <div class="contact-us-description">
-                        We will do our best to respond to your message as soon as possible. We look forward to working with you and helping your small
+                        We will do our best to respond to your message as soon as possible. We look forward to working with you and helping your
                         business thrive online!
                     </div>
                 </div>
