@@ -181,7 +181,7 @@ const App = () => {
                     <div class="pricing-header">
                         <div class="pricing-item">
                             <div class="pricing-value">
-                                $<CountUp end={section3IsInView ? 125 : 0} duration={1} />
+                                $<CountUp end={section3IsInView ? 150 : 0} duration={1} />
                             </div>
                             <div class="pricing-type">Initiation</div>
                         </div>
@@ -194,7 +194,7 @@ const App = () => {
                     </div>
                     <div class="pricing-description">
                         Our main priority is to help businesses succeed with the skills and expertise we have gained over the years. And the best
-                        part? Our pricing is designed to be cost-effective. Sign up today for a low cost initiation fee of $125 and a low monthly fee
+                        part? Our pricing is designed to be cost-effective. Sign up today for a low cost initiation fee of $150 and a low monthly fee
                         of just $50. Lifetime support is included in all plans, and you can cancel at any time.
                     </div>
                     <div class="pricing-description">
