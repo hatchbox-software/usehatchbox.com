@@ -33,3 +33,36 @@ html, body {
 	font-weight: 400;
 	font-size: 1rem;
 }
+
+.navbar {
+	display: flex;
+	color: #eeeeee;
+	font-family: 'Inter', sans-serif;
+	margin: 16px;
+	padding: 0 10px;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 100%;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.navbar div {
+	margin-right: 24px;
+}
+
+@media (max-width: 700px) {
+	.navbar {
+		margin: 10px;
+		padding: 0;
+		font-size: 12px;
+	}
+
+	.navbar div {
+		margin-right: 12px;
+	}
+}
+
+.navbar div:hover {
+	color: #6b3be8;
+}

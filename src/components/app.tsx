@@ -26,8 +26,17 @@ const App = () => {
     const section5Ref = useRef(null);
     const section5IsInView = useInView(section5Ref, { once: true });
 
+    const scrollElementIntoView = (id: string) => {
+        const element = document.getElementById(id);
+        element?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <div id="app">
+            <motion.div className="navbar" initial={{ opacity: 0, y: '-10px' }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+                <div onClick={() => scrollElementIntoView('contact-us')}>Contact Us</div>
+                <div onClick={() => scrollElementIntoView('roadmap')}>Roadmap</div>
+            </motion.div>
             <div class="section center">
                 <div class="content">
                     <div>
@@ -39,12 +48,10 @@ const App = () => {
                             <div class="description">Transform your business with custom website development and lifelong support from Hatchbox</div>
                         </motion.div>
                         <motion.div class="buttons" initial={{ y: '10px', opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
-                            <div class="button" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
+                            <div class="button" onClick={() => scrollElementIntoView('pricing')}>
                                 PRICING
                             </div>
-                            <div
-                                class="button secondary"
-                                onClick={() => document.getElementById('live-preview')?.scrollIntoView({ behavior: 'smooth' })}>
+                            <div class="button secondary" onClick={() => scrollElementIntoView('live-preview')}>
                                 LIVE PREVIEW
                             </div>
                         </motion.div>
@@ -200,7 +207,7 @@ const App = () => {
                     </div>
                 </div>
             </div>
-            <div class="section">
+            <div class="section" id="contact-us">
                 <div
                     class="content center"
                     ref={section4Ref}
@@ -244,6 +251,18 @@ const App = () => {
                             To see a live preview of a small restaurant site that showcases all of our available features, just click here!
                         </div>
                     </motion.div>
+                </div>
+            </div>
+            <div class="section" id="roadmap">
+                <div
+                    class="content center"
+                    ref={section5Ref}
+                    style={{
+                        transform: section5IsInView ? 'none' : 'translateY(50px)',
+                        opacity: section5IsInView ? 1 : 0,
+                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
+                    }}>
+                    <div class="section-header">Roadmap</div>
                 </div>
             </div>
         </div>
