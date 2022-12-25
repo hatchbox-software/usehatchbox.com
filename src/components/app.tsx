@@ -62,14 +62,14 @@ const App = () => {
                         opacity: section1IsInView ? 1 : 0,
                         transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
                     }}>
-                    <div class="section-header">Bring your website to life!</div>
+                    <div class="section-header">Bring your site to life!</div>
                     <div class="site-to-life-description">
-                        Are you ready to take your small business to the next level? Look no further than Hatchbox. A website is an essential tool for
+                        Are you ready to take your small business to the next level? Look no further than Hatchbox. A site is an essential tool for
                         reaching and engaging with customers, establishing an online presence, and standing out in a crowded market.
                     </div>
                     <div class="site-to-life-description">
-                        Our team is dedicated to developing custom websites for small businesses like yours, tailored to your unique needs and goals.
-                        Let us help bring your website to life and boost your business to new heights.
+                        Our team is dedicated to developing custom sites for small businesses like yours, tailored to your unique needs and goals. Let
+                        us help bring your site to life and boost your business to new heights.
                     </div>
                 </div>
             </div>
@@ -93,8 +93,8 @@ const App = () => {
                             <div>
                                 <div class="feature-title">Custom site development</div>
                                 <div class="feature-description">
-                                    Our team will work with you directly to understand your business and create a website that reflects your unique
-                                    brand and personality.
+                                    Our team will work with you directly to understand your business and create a site that reflects your unique brand
+                                    and personality.
                                 </div>
                             </div>
                         </div>
@@ -118,9 +118,9 @@ const App = () => {
                                 </div>
                             </div>
                             <div>
-                                <div class="feature-title">Optimal website performance</div>
+                                <div class="feature-title">Optimal site performance</div>
                                 <div class="feature-description">
-                                    We use advanced coding techniques to ensure that your website loads quickly and performs well.
+                                    We use advanced coding techniques to ensure that your site loads quickly and performs well.
                                 </div>
                             </div>
                         </div>
@@ -133,8 +133,8 @@ const App = () => {
                             <div>
                                 <div class="feature-title">Lifetime support</div>
                                 <div class="feature-description">
-                                    We're here for you every step of the way, offering ongoing support to keep your website running smoothly. This
-                                    includes the ability to work with a person directly to make updates to your website.
+                                    We're here for you every step of the way, offering ongoing support to keep your site running smoothly. This
+                                    includes the ability to work with a person directly to make updates to your site.
                                 </div>
                             </div>
                         </div>
@@ -147,7 +147,7 @@ const App = () => {
                             <div>
                                 <div class="feature-title">Quarterly site analytics</div>
                                 <div class="feature-description">
-                                    We'll provide regular analytics summaries to help you track your website’s performance.
+                                    We'll provide regular analytics summaries to help you track your site’s performance.
                                 </div>
                             </div>
                         </div>
@@ -243,7 +243,7 @@ const App = () => {
                         <img src="assets/preview.png" alt="preview" />
                         <div class="preview-title">Fork'd Preview Site</div>
                         <div class="preview-description">
-                            To see a live preview of a small restaurant website that showcases all of our available features, just click here!
+                            To see a live preview of a small restaurant site that showcases all of our available features, just click here!
                         </div>
                     </motion.div>
                 </div>
