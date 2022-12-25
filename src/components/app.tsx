@@ -7,6 +7,7 @@ import '../style/features.scss';
 import '../style/pricing.scss';
 import '../style/contact.scss';
 import '../style/preview.scss';
+import '../style/roadmap.scss';
 import { useRef } from 'react';
 import CountUp from 'react-countup';
 
@@ -25,6 +26,9 @@ const App = () => {
 
     const section5Ref = useRef(null);
     const section5IsInView = useInView(section5Ref, { once: true });
+
+    const section6Ref = useRef(null);
+    const section6IsInView = useInView(section6Ref, { once: true });
 
     const scrollElementIntoView = (id: string) => {
         const element = document.getElementById(id);
@@ -256,13 +260,65 @@ const App = () => {
             <div class="section" id="roadmap">
                 <div
                     class="content center"
-                    ref={section5Ref}
+                    ref={section6Ref}
                     style={{
-                        transform: section5IsInView ? 'none' : 'translateY(50px)',
-                        opacity: section5IsInView ? 1 : 0,
+                        transform: section6IsInView ? 'none' : 'translateY(50px)',
+                        opacity: section6IsInView ? 1 : 0,
                         transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
                     }}>
                     <div class="section-header">Roadmap</div>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="number">1</div>
+                            <div>
+                                <div class="steps-title">Initial consultation</div>
+                                <div class="steps-description">
+                                    We'll have a conversation to understand your business, target audience, and goals for your website.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="number">2</div>
+                            <div>
+                                <div class="steps-title">Gathering content and assets</div>
+                                <div class="steps-description">
+                                    We'll work with you to gather all of the necessary content and assets for your website, including text, images,
+                                    and any other media. We'll provide templates or guidelines to help you organize your content.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="number">3</div>
+                            <div>
+                                <div class="steps-title">Design and development</div>
+                                <div class="steps-description">
+                                    We'll build your website based on your content and the templates provided. We'll make any necessary revisions or
+                                    adjustments based on your feedback.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="number">4</div>
+                            <div>
+                                <div class="steps-title">Testing and launch</div>
+                                <div class="steps-description">
+                                    We'll test your website to ensure that it is functioning correctly and is optimized for SEO. Once you have
+                                    approved the website, we'll launch it and make it live for the public to access.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="number">5</div>
+                            <div>
+                                <div class="steps-title">Ongoing support and maintenance</div>
+                                <div class="steps-description">
+                                    We'll provide ongoing support and maintenance for your website, including handling any updates or changes
+                                    requested by you. We'll also offer quarterly site analytic reviews to help you track the performance of your
+                                    website and identify any areas for improvement.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -63,6 +63,8 @@ html, body {
 	}
 }
 
-.navbar div:hover {
-	color: #6b3be8;
+@media (hover: hover) {
+	.navbar div:hover {
+		color: #6b3be8;
+	}
 }
