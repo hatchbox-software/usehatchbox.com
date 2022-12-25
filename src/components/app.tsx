@@ -103,7 +103,8 @@ const App = () => {
                                 <div class="feature-title">Custom site development</div>
                                 <div class="feature-description">
                                     Our team will work with you directly to understand your business and create a site that reflects your unique brand
-                                    and personality.
+                                    and personality. We take pride in designing and developing fully responsive sites that look and function
+                                    beautifully on all devices.
                                 </div>
                             </div>
                         </div>
