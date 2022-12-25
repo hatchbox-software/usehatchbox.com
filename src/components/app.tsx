@@ -194,8 +194,8 @@ const App = () => {
                     </div>
                     <div class="pricing-description">
                         Our main priority is to help businesses succeed with the skills and expertise we have gained over the years. And the best
-                        part? Our pricing is designed to be cost-effective. Sign up today for a low cost initiation fee of $150 and a low monthly fee
-                        of just $50. Lifetime support is included in all plans, and you can cancel at any time.
+                        part? Our pricing is designed to be cost-effective. Get started for a low cost initiation fee of $150 and a low monthly fee of
+                        just $50. Lifetime support is included in all plans, and you can cancel at any time.
                     </div>
                     <div class="pricing-description">
                         Don't let a lack of technical expertise or time hold you back. Let Hatchbox help your business reach its full potential.
