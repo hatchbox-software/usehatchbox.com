@@ -211,52 +211,6 @@ const App = () => {
                     </div>
                 </div>
             </div>
-            <div class="section" id="contact-us">
-                <div
-                    class="content center"
-                    ref={section4Ref}
-                    style={{
-                        transform: section4IsInView ? 'none' : 'translateY(50px)',
-                        opacity: section4IsInView ? 1 : 0,
-                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
-                    }}>
-                    <div class="section-header">Contact Us</div>
-                    <div class="contact-us-description">
-                        Thank you for your interest in Hatchbox! If you have any questions or would like to learn more about our services, don't
-                        hesitate to contact us. Please email us at:
-                    </div>
-                    <div class="email">usehatchbox@gmail.com</div>
-                    <div class="contact-us-description">
-                        We will do our best to respond to your message as soon as possible. We look forward to working with you and helping your
-                        business thrive online!
-                    </div>
-                </div>
-            </div>
-            <div class="section light" id="live-preview">
-                <div
-                    class="content center"
-                    ref={section5Ref}
-                    style={{
-                        transform: section5IsInView ? 'none' : 'translateY(50px)',
-                        opacity: section5IsInView ? 1 : 0,
-                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
-                    }}>
-                    <div class="section-header">Live Previews</div>
-                    <motion.div
-                        class="preview"
-                        onClick={() => window.open('https://preview-forkd.vercel.app/')}
-                        whileHover={{
-                            scale: 1.05,
-                            transition: { duration: 0.5 },
-                        }}>
-                        <img src="assets/preview.png" alt="preview" />
-                        <div class="preview-title">Fork'd Preview Site</div>
-                        <div class="preview-description">
-                            To see a live preview of a small restaurant site that showcases all of our available features, just click here!
-                        </div>
-                    </motion.div>
-                </div>
-            </div>
             <div class="section" id="roadmap">
                 <div
                     class="content center"
@@ -318,6 +272,52 @@ const App = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section light" id="live-preview">
+                <div
+                    class="content center"
+                    ref={section5Ref}
+                    style={{
+                        transform: section5IsInView ? 'none' : 'translateY(50px)',
+                        opacity: section5IsInView ? 1 : 0,
+                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
+                    }}>
+                    <div class="section-header">Live Previews</div>
+                    <motion.div
+                        class="preview"
+                        onClick={() => window.open('https://preview-forkd.vercel.app/')}
+                        whileHover={{
+                            scale: 1.05,
+                            transition: { duration: 0.5 },
+                        }}>
+                        <img src="assets/preview.png" alt="preview" />
+                        <div class="preview-title">Fork'd Preview Site</div>
+                        <div class="preview-description">
+                            To see a live preview of a small restaurant site that showcases all of our available features, just click here!
+                        </div>
+                    </motion.div>
+                </div>
+            </div>
+            <div class="section" id="contact-us">
+                <div
+                    class="content center"
+                    ref={section4Ref}
+                    style={{
+                        transform: section4IsInView ? 'none' : 'translateY(50px)',
+                        opacity: section4IsInView ? 1 : 0,
+                        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
+                    }}>
+                    <div class="section-header">Contact Us</div>
+                    <div class="contact-us-description">
+                        Thank you for your interest in Hatchbox! If you have any questions or would like to learn more about our services, don't
+                        hesitate to contact us. Please email us at:
+                    </div>
+                    <div class="email">usehatchbox@gmail.com</div>
+                    <div class="contact-us-description">
+                        We will do our best to respond to your message as soon as possible. We look forward to working with you and helping your
+                        business thrive online!
                     </div>
                 </div>
             </div>
