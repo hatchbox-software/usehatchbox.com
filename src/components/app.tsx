@@ -87,7 +87,7 @@ const App = () => {
                         <div class="feature">
                             <div>
                                 <div class="feature-icon">
-                                    <img src="assets/edit.svg" />
+                                    <img src="assets/browser.svg" />
                                 </div>
                             </div>
                             <div>
@@ -148,6 +148,20 @@ const App = () => {
                                 <div class="feature-title">Quarterly site analytics</div>
                                 <div class="feature-description">
                                     We'll provide regular analytics summaries to help you track your website’s performance.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div>
+                                <div class="feature-icon">
+                                    <img src="assets/edit.svg" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="feature-title">Optional in-house writing</div>
+                                <div class="feature-description">
+                                    We offer in-house writing services to help bring your brand's voice and message across on your site. Simply
+                                    provide us with the general idea or theme for the content, and our team will take it from there.
                                 </div>
                             </div>
                         </div>
