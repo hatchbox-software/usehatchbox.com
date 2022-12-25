@@ -214,7 +214,7 @@ const App = () => {
                     <div class="section-header">Contact Us</div>
                     <div class="contact-us-description">
                         Thank you for your interest in Hatchbox! If you have any questions or would like to learn more about our services, don't
-                        hesitate to contact us. To get in touch with us, please email us at:
+                        hesitate to contact us. Please email us at:
                     </div>
                     <div class="email">usehatchbox@gmail.com</div>
                     <div class="contact-us-description">
