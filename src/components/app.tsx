@@ -288,15 +288,15 @@ const App = () => {
                     <div class="section-header">Live Previews</div>
                     <motion.div
                         class="preview"
-                        onClick={() => window.open('https://preview-forkd.vercel.app/')}
+                        onClick={() => window.open('https://preview-comfort-kitchen.vercel.app/')}
                         whileHover={{
                             scale: 1.05,
                             transition: { duration: 0.5 },
                         }}>
                         <img src="assets/preview.png" alt="preview" />
-                        <div class="preview-title">Fork'd Preview Site</div>
+                        <div class="preview-title">Comfort Kitchen</div>
                         <div class="preview-description">
-                            To see a live preview of a small restaurant site that showcases all of our available features, just click here!
+                            To see a live preview of a classic diner restaurant site that showcases all of our available features, just click here!
                         </div>
                     </motion.div>
                 </div>
